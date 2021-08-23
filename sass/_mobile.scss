@@ -9,7 +9,7 @@
             position: relative;
 
             .navbar-links {
-                // display: none;
+                display: none;
                 position: absolute;
                 flex-direction: column;
                 text-align: center;
@@ -31,6 +31,10 @@
                 .navbar-link:hover::after {
                     content: none;
                 }
+            }
+
+            .navbar-links.open {
+                display: flex;
             }
         }
     }
