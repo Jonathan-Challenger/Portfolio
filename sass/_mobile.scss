@@ -9,12 +9,13 @@
             position: relative;
 
             .navbar-links {
-                display: none;
                 position: absolute;
                 flex-direction: column;
                 text-align: center;
                 width: 100%;
                 top: 5.4rem;
+                clip-path: inset(0 0 100% 0);
+                transition: all 800ms ease;
 
                 .navbar-link-container {
                     border-right: none;
@@ -34,7 +35,7 @@
             }
 
             .navbar-links.open {
-                display: flex;
+                clip-path: inset(0 0 0 0);
             }
         }
     }
