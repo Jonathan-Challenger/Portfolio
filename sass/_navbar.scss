@@ -6,7 +6,7 @@
     }
 
     .fas:hover {
-        animation: pulse 2s infinite;
+        animation: pulse 1.5s infinite;
     }
 
     .navbar-container {
@@ -45,10 +45,10 @@
 
             .navbar-link:hover::after {
                 content: '';
-                height: 5px;
+                height: 3px;
                 width: 100%;
                 position: absolute;
-                bottom: -23px;
+                bottom: -15px;
                 left: 0;
                 background-color: black;
             }
@@ -58,7 +58,7 @@
 
 @keyframes pulse {
     50% {
-        transform: scale(1.05);
+        transform: scale(1.1);
     }
 
     100% {
