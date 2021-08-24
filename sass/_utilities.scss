@@ -1,0 +1,7 @@
+$shape-size: 300px;
+
+%shape-cont {
+    position: absolute;
+    height: $shape-size;
+    width: $shape-size;
+}
