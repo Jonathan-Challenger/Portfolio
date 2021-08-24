@@ -4,8 +4,6 @@
 @import 'colors';
 @import 'utilities';
 
-$shape-size:300px; 
-
 * {
     box-sizing: border-box;
     padding: 0;
@@ -46,31 +44,53 @@ body {
         bottom: 85px;
     }
 
-    .rdc {
+    .rdc1 {
         @extend %shape-cont;
         top:0;
         left:0;
         animation: x 7s linear infinite alternate;
 
-        .red-circle {
-            height: $shape-size;
-            width: $shape-size;
+        .red-circle1 {
+            @extend %shape;
             animation: y 3s linear infinite alternate;
-            opacity: 0.5;
+            
         }
     }
 
-    .rdo {
+    .rdc2 {
         @extend %shape-cont;
         bottom:0;
         right:0;
         animation: x2 5s linear infinite alternate;
 
-        .red-oct {
-            height: $shape-size;
-            width: $shape-size;
-            opacity: 0.5;
+        .red-circle2 {
+            @extend %shape;
             animation: y2 2s linear infinite alternate;
+            
+        }
+    }
+
+    .rdc3 {
+        @extend %shape-cont;
+        top:0;
+        right:0;
+        animation: x3 7s linear infinite alternate;
+
+        .red-circle3 {
+            @extend %shape;
+            animation: y3 2s linear infinite alternate;
+        }
+    }
+
+    .rdc4 {
+        @extend %shape-cont;
+        top:0;
+        right:0;
+        animation: x3 4s linear infinite alternate;
+
+        .red-circle4 {
+            @extend %shape;
+            animation: y3 5s linear infinite alternate;
         }
     }
 
@@ -109,6 +129,30 @@ body {
 }
 
 @keyframes y2 {
+    100% {
+        transform: translateY(-440px);
+    }
+}
+
+@keyframes x3 {
+    100% {
+        transform: translateX(-1411px);
+    }
+}
+
+@keyframes y3 {
+    100% {
+        transform: translateY(440px);
+    }
+}
+
+@keyframes x4 {
+    100% {
+        transform: translateX(1411px);
+    }
+}
+
+@keyframes y4 {
     100% {
         transform: translateY(-440px);
     }

@@ -5,3 +5,10 @@ $shape-size: 300px;
     height: $shape-size;
     width: $shape-size;
 }
+
+%shape {
+    height: $shape-size;
+    width: $shape-size;
+    opacity: 0.5;
+    transform: rotateZ(180deg);
+}
