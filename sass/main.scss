@@ -103,12 +103,19 @@ body {
         h2 {
             font-size: 3rem;
             z-index: 1;
-    
-            .name {
-                font-size: 4rem;
-                color: $primary;
-                cursor: pointer;
-            }
+            line-height: 2;
+        }
+
+        .letter {
+            font-size: 4.5rem;
+            color: $primary;
+            cursor: pointer;
+            transition: all 300ms ease;
+        }
+
+        .letter:hover {
+            text-shadow: 2px 2px black;
+            transform: translateY(-10px);
         }
 
         h3 {
