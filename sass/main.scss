@@ -55,24 +55,24 @@ body {
         .red-circle {
             height: $shape-size;
             width: $shape-size;
-            animation: y 4s linear infinite alternate;
+            animation: y 3s linear infinite alternate;
             opacity: 0.5;
         }
     }
 
-    /* .rdo {
+    .rdo {
         @extend %shape-cont;
         bottom:0;
         right:0;
-        animation: x 5s linear infinite alternate;
+        animation: x2 5s linear infinite alternate;
 
         .red-oct {
             height: $shape-size;
             width: $shape-size;
-            animation: y 2s linear infinite alternate;
             opacity: 0.5;
+            animation: y2 2s linear infinite alternate;
         }
-    } */
+    }
 
     .content {
         display: flex;
@@ -99,6 +99,18 @@ body {
 @keyframes y {
     100% {
         transform: translateY( calc(743px - #{$shape-size}) );
+    }
+}
+
+@keyframes x2 {
+    100% {
+        transform: translateX(-1411px);
+    }
+}
+
+@keyframes y2 {
+    100% {
+        transform: translateY(-440px);
     }
 }
 
