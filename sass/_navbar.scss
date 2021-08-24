@@ -1,3 +1,5 @@
+@import 'colors';
+
 .navbar {
     z-index: 1;
 
@@ -44,6 +46,10 @@
                 font-size: 2rem;
             }
 
+            .navbar-link:hover {
+                color: $primary;
+            }
+
             .navbar-link:hover::after {
                 content: '';
                 height: 3px;
@@ -51,7 +57,7 @@
                 position: absolute;
                 bottom: -15px;
                 left: 0;
-                background-color: black;
+                background-color: $primary;
             }
         }
     }

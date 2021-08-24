@@ -16,6 +16,7 @@
                 top: 5.4rem;
                 clip-path: inset(0 0 100% 0);
                 transition: all 800ms ease;
+                z-index: 1;
 
                 .navbar-link-container {
                     border-right: none;
@@ -23,6 +24,7 @@
                     padding: 0;
                     padding: 5px 0;
                     cursor: pointer;
+                    background-color: white;
                 }
 
                 .navbar-link-container:hover {

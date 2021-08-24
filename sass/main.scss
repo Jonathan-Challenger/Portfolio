@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
 @import 'navbar';
 @import 'mobile';
+@import 'colors';
 
 * {
     box-sizing: border-box;
@@ -46,7 +47,7 @@ body {
         font-size: 4rem;
 
         span {
-            color: red;
+            color: $primary;
         }
     }
 }
