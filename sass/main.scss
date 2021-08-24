@@ -100,10 +100,13 @@ body {
         justify-content: center;
 
         h2 {
-            font-size: 4rem;
+            font-size: 3rem;
+            z-index: 1;
     
-            span {
+            .name {
+                font-size: 4rem;
                 color: $primary;
+                cursor: pointer;
             }
         }
     }
