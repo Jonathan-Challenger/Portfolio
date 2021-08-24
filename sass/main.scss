@@ -99,10 +99,10 @@ body {
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        z-index: 1;
 
         h2 {
             font-size: 3rem;
-            z-index: 1;
             line-height: 2;
         }
 
@@ -121,6 +121,24 @@ body {
         h3 {
             font-size: 2rem;
         }
+
+        .go-btn {
+            height: 50px;
+            width: 150px;
+            cursor: pointer;
+            font-family: 'Sora', sans-serif;
+            font-size: 1rem;
+            color: white;
+            margin-top: 30px;
+            border-radius: 15px;
+            border: none;
+            background-color: $primary;
+            transition: transform 300ms ease;
+        }
+
+        .go-btn:hover {
+            transform: scale(1.1);
+        }
     }
 }
 
@@ -129,7 +147,6 @@ body {
         transform: translateX( calc(1711px - #{$shape-size}) );
     }
 }
-
 
 @keyframes y {
     100% {
