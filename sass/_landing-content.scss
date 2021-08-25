@@ -24,7 +24,7 @@
         @extend %shape; 
         top: calc(#{$shape-size}/2 * -1);
         left: calc(#{$shape-size}/2 * -1);
-        transform: rotateZ(180deg);
+        // transform: rotateZ(180deg);
     }
 
     
@@ -33,7 +33,7 @@
         @extend %shape;
         bottom: calc(#{$shape-size}/2 * -1);
         left: calc(#{$shape-size}/2 * -1);
-        transform: rotateZ(90deg);
+        // transform: rotateZ(90deg);
     }
 
 
@@ -47,7 +47,7 @@
         @extend %shape;
         top: calc(#{$shape-size}/2 * -1);
         right: calc(#{$shape-size}/2 * -1);
-        transform: rotateZ(-90deg);
+        // transform: rotateZ(-90deg);
     }
 
     .content {

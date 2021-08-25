@@ -5,4 +5,11 @@ $shape-size: 600px;
     height: $shape-size;
     width: $shape-size;
     opacity: 0.7;
+    transition: all 400ms ease;
+    cursor: pointer;
 }
+
+%shape:hover {
+    transform: scale(1.05);
+}
+
