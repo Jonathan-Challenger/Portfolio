@@ -43,8 +43,49 @@
     }
 
     body .container {
+        $shape-size: 200px;
+
+        .red-circle1 {
+            top: calc(#{$shape-size}/2 * -1);
+            left: calc(#{$shape-size}/2 * -1);
+            height: $shape-size;
+            width: $shape-size;
+        }
+
+        .red-circle2 {
+            bottom: calc(#{$shape-size}/2 * -1);
+            left: calc(#{$shape-size}/2 * -1);
+            height: $shape-size;
+            width: $shape-size;
+        }
+
+        .red-circle3 {
+            bottom: calc(#{$shape-size}/2 * -1);
+            right: calc(#{$shape-size}/2 * -1);
+            height: $shape-size;
+            width: $shape-size;
+        }
+
+        .red-circle4 {
+            top: calc(#{$shape-size}/2 * -1);
+            right: calc(#{$shape-size}/2 * -1);
+            height: $shape-size;
+            width: $shape-size;
+        }
+
         .content {
             z-index: 0;
+
+            h2 {
+                font-size:2.5rem;
+            }
+
+            .letter {
+                font-size: 4rem;
+            }
+
         }
     }
+
+
 }
