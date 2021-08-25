@@ -71,7 +71,7 @@
 
         .letter:hover {
             text-shadow: 2px 2px black;
-            transform: translateY(-10px);
+            transform: translateY(-10px) scale(1.05);
         }
 
         h3 {
