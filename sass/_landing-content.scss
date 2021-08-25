@@ -19,55 +19,35 @@
         position: absolute;
         bottom: 85px;
     }
-
-    .rdc1 {
-        @extend %shape-cont;
-        top:0;
-        left:0;
-        animation: x 7s linear infinite alternate;
-
-        .red-circle1 {
-            @extend %shape;
-            animation: y 3s linear infinite alternate;
-            
-        }
+        
+    .red-circle1 {
+        @extend %shape; 
+        top: calc(#{$shape-size}/2 * -1);
+        left: calc(#{$shape-size}/2 * -1);
+        transform: rotateZ(180deg);
     }
 
-    .rdc2 {
-        @extend %shape-cont;
-        bottom:0;
-        right:0;
-        animation: x2 5s linear infinite alternate;
+    
 
-        .red-circle2 {
-            @extend %shape;
-            animation: y2 2s linear infinite alternate;
-            
-        }
+    .red-circle2 {
+        @extend %shape;
+        bottom: calc(#{$shape-size}/2 * -1);
+        left: calc(#{$shape-size}/2 * -1);
+        transform: rotateZ(90deg);
     }
 
-    .rdc3 {
-        @extend %shape-cont;
-        top:0;
-        right:0;
-        animation: x3 7s linear infinite alternate;
 
-        .red-circle3 {
-            @extend %shape;
-            animation: y3 2s linear infinite alternate;
-        }
+    .red-circle3 {
+        @extend %shape;
+        bottom: calc(#{$shape-size}/2 * -1);
+        right: calc(#{$shape-size}/2 * -1);
     }
-
-    .rdc4 {
-        @extend %shape-cont;
-        top:0;
-        right:0;
-        animation: x3 4s linear infinite alternate;
-
-        .red-circle4 {
-            @extend %shape;
-            animation: y3 5s linear infinite alternate;
-        }
+    
+    .red-circle4 {
+        @extend %shape;
+        top: calc(#{$shape-size}/2 * -1);
+        right: calc(#{$shape-size}/2 * -1);
+        transform: rotateZ(-90deg);
     }
 
     .content {
@@ -121,53 +101,5 @@
         .go-btn:hover {
             transform: scale(1.1);
         }
-    }
-}
-
-@keyframes x {
-    100% {
-        transform: translateX( calc(1711px - #{$shape-size}) );
-    }
-}
-
-@keyframes y {
-    100% {
-        transform: translateY( calc(743px - #{$shape-size}) );
-    }
-}
-
-@keyframes x2 {
-    100% {
-        transform: translateX(-1411px);
-    }
-}
-
-@keyframes y2 {
-    100% {
-        transform: translateY(-440px);
-    }
-}
-
-@keyframes x3 {
-    100% {
-        transform: translateX(-1411px);
-    }
-}
-
-@keyframes y3 {
-    100% {
-        transform: translateY(440px);
-    }
-}
-
-@keyframes x4 {
-    100% {
-        transform: translateX(1411px);
-    }
-}
-
-@keyframes y4 {
-    100% {
-        transform: translateY(-440px);
     }
 }
