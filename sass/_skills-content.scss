@@ -19,14 +19,24 @@
     margin: auto;
     height: 521px;
     text-align: center;
+    position: relative;
     
     h1 {
         font-size: 2rem;
+        position: relative;
+    }
+
+    h1::after {
+        content:'';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: $primary;
+        height: 3px;
     }
 
     .skills-container {
-        border: 20px solid $primary;
-        border-radius: 40px;
         display: grid;
         padding: 10px 10px;
         grid-template-columns: repeat(4, 1fr);
@@ -94,4 +104,14 @@
             color: #ffc0cb;
         }
     }
+}
+
+.content-cont::after {
+    content:'';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 100%;
+    background-color: $primary;
+    height: 3px;
 }
