@@ -24,12 +24,13 @@
     h1 {
         font-size: 2rem;
         position: relative;
+        margin-bottom: 30px;
     }
 
     h1::after {
         content:'';
         position: absolute;
-        bottom: 0;
+        bottom: -15px;
         left: 0;
         width: 100%;
         background-color: $primary;
@@ -109,7 +110,7 @@
 .content-cont::after {
     content:'';
     position: absolute;
-    bottom: -15px;
+    bottom: -60px;
     left: 0;
     width: 100%;
     background-color: $primary;
