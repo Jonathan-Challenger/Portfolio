@@ -2,6 +2,7 @@
 @import 'navbar';
 @import 'mobile';
 @import 'landing-content';
+@import 'skills-content';
 
 * {
     box-sizing: border-box;
@@ -14,12 +15,12 @@ body {
     font-family: 'Sora', sans-serif;
     width: 100%;
     height: 100vh;
+    // scroll-behavior: smooth;
 }
 
 .page {
     width:100%;
     height:100%;
-    overflow-y: scroll;
     scroll-behavior: smooth;
 }
 
