@@ -12,76 +12,86 @@
     top: calc(50% - (#{$shape-size-m}/2));
 }
 
-.skills-container {
+.content-cont {
+    display: flex;
+    flex-direction: column;
     width: 60%;
     margin: auto;
     height: 521px;
-    border: 20px solid $primary;
-    border-radius: 40px;
-    display: grid;
-    padding: 10px 10px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 213.5px;
-    row-gap: 2em;
-    column-gap: 3rem;
-    justify-items: center;
+    text-align: center;
+    
+    h1 {
+        font-size: 2rem;
+    }
 
-    .item {
-        cursor: pointer;
-        border: 2px solid black;
+    .skills-container {
+        border: 20px solid $primary;
         border-radius: 40px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.5rem;
-        width: 180px;
-        text-align: center;
-        transition: all 400ms ease;
-        background-color: rgb(223, 223, 223);
-        opacity: 0.5;
-
-        i {
-            margin-bottom: 30px;
+        display: grid;
+        padding: 10px 10px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 213.5px;
+        row-gap: 2em;
+        column-gap: 3rem;
+        justify-items: center;
+    
+        .item {
+            cursor: pointer;
+            border: 2px solid black;
+            border-radius: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            width: 180px;
+            text-align: center;
+            transition: all 400ms ease;
+            background-color: rgb(223, 223, 223);
+            opacity: 0.5;
+    
+            i {
+                margin-bottom: 30px;
+            }
         }
-    }
-
-    .item:hover {
-        transform: scale(1.08);
-        opacity: 1;
-    }
-
-    #python:hover i{
-        color: #306998;
-    }
-
-    #js:hover i {
-        color: #f0db4f;
-        background-color: #323330;
-
-    }
-
-    #html:hover i{
-        color: #e34c26;
-    }
-
-    #css:hover i{
-        color: #264de4;
-    }
-
-    #sass:hover i{
-        color: #cc6699;
-    }
-
-    #vue:hover i{
-        color: #42b883;
-    }
-
-    #git:hover i{
-        color: black;
-    }
-
-    #brain:hover i{
-        color: #ffc0cb;
+    
+        .item:hover {
+            transform: scale(1.06);
+            opacity: 1;
+        }
+    
+        #python:hover i{
+            color: #306998;
+        }
+    
+        #js:hover i {
+            color: #f0db4f;
+            background-color: #323330;
+    
+        }
+    
+        #html:hover i{
+            color: #e34c26;
+        }
+    
+        #css:hover i{
+            color: #264de4;
+        }
+    
+        #sass:hover i{
+            color: #cc6699;
+        }
+    
+        #vue:hover i{
+            color: #42b883;
+        }
+    
+        #git:hover i{
+            color: black;
+        }
+    
+        #brain:hover i{
+            color: #ffc0cb;
+        }
     }
 }
