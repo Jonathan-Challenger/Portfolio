@@ -1,6 +1,9 @@
+@import 'colors';
+
 .skills-container {
     width: 60%;
     margin: auto;
     background-color: aqua;
-    height: 600px;
+    height: 501px;
+    border: 20px solid $primary;
 }

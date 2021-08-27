@@ -2,6 +2,10 @@
 
 .navbar {
     z-index: 1;
+    position: fixed;
+    top: 0;
+    width: calc(100% - 17px);
+    background-color: rgba(255, 255, 255, 0.8);
 
     .fas {
         cursor: pointer;
@@ -16,9 +20,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 90%;
-        margin: auto;
         padding: 5px 0;
+        margin: auto;
+        width: 90%;
     
         img {
             height: 80px;
