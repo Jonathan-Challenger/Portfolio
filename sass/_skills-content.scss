@@ -15,12 +15,31 @@
 .skills-container {
     width: 60%;
     margin: auto;
-    height: 501px;
+    height: 521px;
     border: 20px solid $primary;
     border-radius: 40px;
     display: grid;
-    padding: 5px 5px;
+    padding: 10px 10px;
     grid-template-columns: repeat(4, 1fr);
-    row-gap: 1em;
+    grid-auto-rows: 213.5px;
+    row-gap: 2em;
     column-gap: 3rem;
+    justify-items: center;
+
+    .item {
+        cursor: pointer;
+        border: 2px solid black;
+        border-radius: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        width: 180px;
+        text-align: center;
+
+        i {
+            margin-bottom: 30px;
+        }
+    }
 }
