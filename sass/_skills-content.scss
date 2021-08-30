@@ -103,37 +103,93 @@
         }
     
         #python:hover i{
-            color: #306998;
+            color: $python;
+        }
+
+        #python {
+            .back {
+                background-color: $python;
+                color: white;
+            }
         }
     
         #js:hover i {
-            color: #f0db4f;
-            background-color: #323330;
+            color: $js-light;
+            background-color: $js-dark;
     
+        }
+
+        #js {
+            .back {
+                background-color: $js-light;
+                color: $js-dark;
+            }
         }
     
         #html:hover i{
-            color: #e34c26;
+            color: $html;
+        }
+
+        #html {
+            .back {
+                background-color: $html;
+                color: black;
+            }
         }
     
         #css:hover i{
-            color: #264de4;
+            color: $css;
+        }
+
+        #css {
+            .back {
+                background-color: $css;
+                color: white;
+            }
         }
     
         #sass:hover i{
-            color: #cc6699;
+            color: $sass;
+        }
+
+        #sass {
+            .back {
+                background-color: $sass;
+                color: black;
+            }
         }
     
         #vue:hover i{
-            color: #42b883;
+            color: $vue;
+        }
+
+        #vue {
+            .back {
+                background-color: $vue;
+                color: black;
+            }
         }
     
         #git:hover i{
             color: black;
         }
+
+        #git {
+            .back {
+                background-color: black;
+                color: white;
+            }
+        }
     
         #brain:hover i{
-            color: #ffc0cb;
+            color: $brain;
+        }
+
+        #brain {
+            .back {
+                background-color: $brain;
+                color: black;
+            }
         }
     }
 }
