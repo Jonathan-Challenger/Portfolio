@@ -58,7 +58,7 @@
             height: 100%;
             cursor: pointer;
             border-radius: 40px;
-            transition: all 400ms ease;
+            transition: all 700ms ease;
             transform-style: preserve-3d;
 
             .front, .back {
@@ -75,6 +75,7 @@
                 background-color: rgb(223, 223, 223);
                 border-radius: 40px;
                 border: 2px solid black;
+                transition: all 400ms ease;
             }
 
             .front {
