@@ -31,6 +31,24 @@
             width: $shape-size;
         }
     }
+
+    body #skills {
+        $shape-size-m: 250px;
+
+        .red-circle5 {
+            height: $shape-size-m;
+            width: $shape-size-m;
+            left: calc(#{$shape-size-m} / 2 * -1);
+            top: calc(50% - (#{$shape-size-m}/2));
+        }
+
+        .red-circle6 {
+            height: $shape-size-m;
+            width: $shape-size-m;
+            right: calc(#{$shape-size-m} / 2 * -1);
+            top: calc(50% - (#{$shape-size-m}/2));
+        }
+    }
 }
 
 // SCREEN AT 800PX
@@ -79,9 +97,12 @@
         }
     }
 
+    body #home {
+        margin-top: 97px;
+    }
+
     body .container {
         $shape-size: 200px;
-        margin-top: 97px;
 
         .red-circle1 {
             top: calc(#{$shape-size}/2 * -1);
@@ -125,5 +146,34 @@
         }
     }
 
+    body #skills {
+        $shape-size-m: 150px;
 
+        .red-circle5 {
+            height: $shape-size-m;
+            width: $shape-size-m;
+            left: calc(#{$shape-size-m} / 2 * -1);
+            top: calc(50% - (#{$shape-size-m}/2));
+        }
+
+        .red-circle6 {
+            height: $shape-size-m;
+            width: $shape-size-m;
+            right: calc(#{$shape-size-m} / 2 * -1);
+            top: calc(50% - (#{$shape-size-m}/2));
+        }
+
+        .content-cont {
+
+            .skills-container {
+                grid-template-columns: 1fr 1fr;
+                padding: 0;
+
+                .card-container {
+                    width: 120px;
+                    height: 180px;
+                }
+            }
+        }
+    }
 }
