@@ -81,6 +81,7 @@
 
     body .container {
         $shape-size: 200px;
+        margin-top: 97px;
 
         .red-circle1 {
             top: calc(#{$shape-size}/2 * -1);
