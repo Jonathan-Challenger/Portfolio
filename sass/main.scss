@@ -23,6 +23,7 @@ body {
     overflow-y: scroll;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 }
 
 section {
@@ -32,6 +33,7 @@ section {
     align-items: center;
     justify-content: center;
     position: relative;
+    scroll-snap-align: center;
 }
 
 
