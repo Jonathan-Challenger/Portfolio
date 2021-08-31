@@ -1,4 +1,4 @@
-$('i.fas').on('click', () => {
+$('i.fa-bars').on('click', () => {
     $(".navbar-links").toggleClass("open")
 })
 
