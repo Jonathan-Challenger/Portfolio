@@ -1,5 +1,15 @@
 // SCREEN AT 1400PX
 @media screen and (max-width: 1400px) {
+    body #home {
+        padding-top: 85px;
+        height: 900px;
+    }
+
+    body #skills {
+        padding-top: 97px;
+        height: 882px;
+    }
+
     body .container {
         $shape-size: 400px;
 
@@ -47,6 +57,18 @@
             width: $shape-size-m;
             right: calc(#{$shape-size-m} / 2 * -1);
             top: calc(50% - (#{$shape-size-m}/2));
+        }
+
+        .content-cont {
+
+            .skills-container {
+                grid-template-columns: repeat(3, 1fr);
+                padding: 0;
+            }
+        }
+
+        .content-cont::after {
+            bottom: -20px;
         }
     }
 }
@@ -98,7 +120,13 @@
     }
 
     body #home {
-        margin-top: 97px;
+        padding-top: 97px;
+        height: 900px;
+    }
+
+    body #skills {
+        height: 1128px;
+        padding-top: 97px;
     }
 
     body .container {
@@ -172,8 +200,26 @@
                 .card-container {
                     width: 120px;
                     height: 180px;
+
+                    .item {
+                        .front {
+                            font-size: 1rem;
+
+                            i {
+                                margin-bottom: 10px;
+                            }
+                        }
+
+                        .back {
+                            font-size: 9px;
+                        }
+                    }
                 }
             }
+        }
+
+        .content-cont::after {
+            bottom: -20px;
         }
     }
 }
