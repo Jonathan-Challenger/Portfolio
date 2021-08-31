@@ -58,7 +58,7 @@
             height: 100%;
             cursor: pointer;
             border-radius: 40px;
-            transition: all 700ms ease;
+            transition: all 1000ms ease;
             transform-style: preserve-3d;
 
             .front, .back {
@@ -105,91 +105,35 @@
         #python:hover i{
             color: $python;
         }
-
-        #python {
-            .back {
-                background-color: $python;
-                color: white;
-            }
-        }
     
         #js:hover i {
             color: $js-light;
             background-color: $js-dark;
     
         }
-
-        #js {
-            .back {
-                background-color: $js-light;
-                color: $js-dark;
-            }
-        }
     
         #html:hover i{
             color: $html;
-        }
-
-        #html {
-            .back {
-                background-color: $html;
-                color: black;
-            }
         }
     
         #css:hover i{
             color: $css;
         }
-
-        #css {
-            .back {
-                background-color: $css;
-                color: white;
-            }
-        }
     
         #sass:hover i{
             color: $sass;
-        }
-
-        #sass {
-            .back {
-                background-color: $sass;
-                color: black;
-            }
         }
     
         #vue:hover i{
             color: $vue;
         }
-
-        #vue {
-            .back {
-                background-color: $vue;
-                color: black;
-            }
-        }
     
         #git:hover i{
             color: black;
         }
-
-        #git {
-            .back {
-                background-color: black;
-                color: white;
-            }
-        }
     
         #brain:hover i{
             color: $brain;
-        }
-
-        #brain {
-            .back {
-                background-color: $brain;
-                color: black;
-            }
         }
     }
 }
