@@ -1,3 +1,24 @@
+// SCREEN AT 1700PX
+@media screen and (max-width: 1700px) {
+    body .container {
+        $shape-size:500px;
+
+        .red-circle1 {
+            top: calc(50% - (#{$shape-size}/2));
+            left: calc(#{$shape-size} / 2 * -1);
+            height: $shape-size;
+            width: $shape-size;
+        }
+
+        .red-circle2 {
+            top: calc(50% - (#{$shape-size}/2));
+            right: calc(#{$shape-size} / 2 * -1);
+            height: $shape-size;
+            width: $shape-size;
+        }
+    }
+}
+
 // SCREEN AT 1400PX
 @media screen and (max-width: 1400px) {
     body #home {
@@ -15,29 +36,15 @@
         $shape-size: 400px;
 
         .red-circle1 {
-            top: calc(#{$shape-size}/2 * -1);
-            left: calc(#{$shape-size}/2 * -1);
+            top: calc(#{$shape-size} / 2 * -1);
+            left: calc(50% - (#{$shape-size}/2));
             height: $shape-size;
             width: $shape-size;
         }
 
         .red-circle2 {
-            bottom: calc(#{$shape-size}/2 * -1);
-            left: calc(#{$shape-size}/2 * -1);
-            height: $shape-size;
-            width: $shape-size;
-        }
-
-        .red-circle3 {
-            bottom: calc(#{$shape-size}/2 * -1);
-            right: calc(#{$shape-size}/2 * -1);
-            height: $shape-size;
-            width: $shape-size;
-        }
-
-        .red-circle4 {
-            top: calc(#{$shape-size}/2 * -1);
-            right: calc(#{$shape-size}/2 * -1);
+            top: calc(100% - (#{$shape-size}/2));
+            left: calc(50% - (#{$shape-size}/2));
             height: $shape-size;
             width: $shape-size;
         }
@@ -135,29 +142,15 @@
         $shape-size: 200px;
 
         .red-circle1 {
-            top: calc(#{$shape-size}/2 * -1);
-            left: calc(#{$shape-size}/2 * -1);
+            top: calc(#{$shape-size} / 2 * -1);
+            left: calc(50% - (#{$shape-size}/2));
             height: $shape-size;
             width: $shape-size;
         }
 
         .red-circle2 {
-            bottom: calc(#{$shape-size}/2 * -1);
-            left: calc(#{$shape-size}/2 * -1);
-            height: $shape-size;
-            width: $shape-size;
-        }
-
-        .red-circle3 {
-            bottom: calc(#{$shape-size}/2 * -1);
-            right: calc(#{$shape-size}/2 * -1);
-            height: $shape-size;
-            width: $shape-size;
-        }
-
-        .red-circle4 {
-            top: calc(#{$shape-size}/2 * -1);
-            right: calc(#{$shape-size}/2 * -1);
+            top: calc(100% - (#{$shape-size}/2));
+            left: calc(50% - (#{$shape-size}/2));
             height: $shape-size;
             width: $shape-size;
         }
