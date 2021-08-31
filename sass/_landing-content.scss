@@ -22,26 +22,14 @@
         
     .red-circle1 {
         @extend %shape; 
-        top: calc(#{$shape-size}/2 * -1);
-        left: calc(#{$shape-size}/2 * -1);
+        top: calc(50% - (#{$shape-size}/2));
+        left: calc(#{$shape-size} / 2 * -1);
     }
 
     .red-circle2 {
         @extend %shape;
-        bottom: calc(#{$shape-size}/2 * -1);
-        left: calc(#{$shape-size}/2 * -1);
-    }
-
-    .red-circle3 {
-        @extend %shape;
-        bottom: calc(#{$shape-size}/2 * -1);
-        right: calc(#{$shape-size}/2 * -1);
-    }
-    
-    .red-circle4 {
-        @extend %shape;
-        top: calc(#{$shape-size}/2 * -1);
-        right: calc(#{$shape-size}/2 * -1);
+        top: calc(50% - (#{$shape-size}/2));
+        right: calc(#{$shape-size} / 2 * -1);
     }
 
     .content {
