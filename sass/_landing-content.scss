@@ -33,6 +33,10 @@
             left: calc(#{$shape-size} / 2 * -1);
             transform: rotateZ(90deg);
         }
+
+        .red-circle1:hover {
+            transform: rotateZ(90deg) scale(1.05);
+        }
     
         .red-circle2 {
             @extend %shape;
