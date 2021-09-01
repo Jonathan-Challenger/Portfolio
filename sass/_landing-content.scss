@@ -31,6 +31,7 @@
             @extend %shape; 
             top: calc(50% - (#{$shape-size}/2));
             left: calc(#{$shape-size} / 2 * -1);
+            transform: rotateZ(90deg);
         }
     
         .red-circle2 {
