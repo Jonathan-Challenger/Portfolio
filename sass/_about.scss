@@ -4,9 +4,73 @@
     width: 100%;
 
     p {
+        width: 60%;
+        font-size: 1.1rem;
+
         .highlight {
             cursor: pointer;
             color: $primary;
+            position: relative;
+        }
+
+        .highlight::before {
+            content: '';
+            height: 11px;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: $primary;
+            opacity: 0.2;
+            clip-path: inset(0 100% 0 0);
+            transition: all 600ms ease;
+        }
+
+        .highlight:hover::before {
+            clip-path: inset(0 0 0 0);
+        }
+
+        .highlight::after {
+            content: '';
+            height: 12px;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: darken($primary, 20%);
+            opacity: 0.2;
+            clip-path: inset(0 0 0 100%);
+            transition: all 600ms ease;
+        }
+
+        .highlight:hover::after {
+            clip-path: inset(0 0 0 0);
+        }
+
+        a {
+            text-decoration: none;
+            color: $primary;
+            position: relative;
+        }
+
+        a:hover::after {
+            clip-path: inset(0 0 0 0);
+        }
+
+        a::after {
+            content: '';
+            height: 3px;
+            width: 100%;
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            background-color: darken($primary, 20%);
+            clip-path: inset(0 100% 100% 0);
+            transition: all 600ms ease;
+        }
+
+        a:hover {
+            color: darken($primary, 10%);
         }
     }
 }
