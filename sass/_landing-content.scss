@@ -53,13 +53,12 @@
             margin-left: -10px;
         }
 
-        #first {
-            margin-left: 10px;
+        .letter.triggered {
+            animation: squeeze 1s linear;
         }
 
-        .letter:hover {
-            text-shadow: 2px 2px black;
-            transform: translateY(-10px) scale(1.05);
+        #first {
+            margin-left: 10px;
         }
 
         h3 {
@@ -83,5 +82,20 @@
         .go-btn:hover {
             transform: scale(1.1);
         }
+    }
+}
+
+@keyframes squeeze {
+
+    20% {
+        transform: scaleY(0.8);
+    }
+
+    40% {
+        transform: scaleY(1.2);
+    }
+
+    100% {
+        transform: scale(1);
     }
 }
