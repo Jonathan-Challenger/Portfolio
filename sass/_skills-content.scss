@@ -13,13 +13,7 @@
 }
 
 .content-cont {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    margin: auto;
-    min-height: 521px;
-    text-align: center;
-    position: relative;
+    @extend %content-cont;
     
     h1 {
         font-size: 3rem;
