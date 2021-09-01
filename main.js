@@ -14,6 +14,9 @@ const lets = document.querySelectorAll('.letter');
 
 for (let i = 0; i < lets.length; i++) {
     lets[i].addEventListener('mouseover', () => {
-        lets[i].classList.toggle("triggered")
+        lets[i].classList.add("triggered")
+        setTimeout(function() {
+            lets[i].classList.remove("triggered")
+        }, 1000)
     })
 }
