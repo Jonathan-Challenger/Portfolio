@@ -17,6 +17,6 @@ for (let i = 0; i < lets.length; i++) {
         lets[i].classList.add("triggered")
         setTimeout(function() {
             lets[i].classList.remove("triggered")
-        }, 1000)
+        }, 1100)
     })
 }
