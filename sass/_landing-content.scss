@@ -19,18 +19,6 @@
         position: absolute;
         bottom: 85px;
     }
-        
-    .red-circle1 {
-        @extend %shape; 
-        top: calc(50% - (#{$shape-size}/2));
-        left: calc(#{$shape-size} / 2 * -1);
-    }
-
-    .red-circle2 {
-        @extend %shape;
-        top: calc(50% - (#{$shape-size}/2));
-        right: calc(#{$shape-size} / 2 * -1);
-    }
 
     .content {
         display: flex;
@@ -38,6 +26,18 @@
         justify-content: center;
         flex-direction: column;
         z-index: 1;
+
+        .red-circle1 {
+            @extend %shape; 
+            top: calc(50% - (#{$shape-size}/2));
+            left: calc(#{$shape-size} / 2 * -1);
+        }
+    
+        .red-circle2 {
+            @extend %shape;
+            top: calc(50% - (#{$shape-size}/2));
+            right: calc(#{$shape-size} / 2 * -1);
+        }
 
         h2 {
             font-size: 3rem;
@@ -49,7 +49,6 @@
             font-size: 4.5rem;
             color: $primary;
             cursor: pointer;
-            transition: all 150ms ease;
             margin-left: -10px;
         }
 

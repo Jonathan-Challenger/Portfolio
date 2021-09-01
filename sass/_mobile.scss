@@ -2,20 +2,23 @@
 @media screen and (max-width: 1700px) {
 
     body .container {
-        $shape-size:500px;
 
-        .red-circle1 {
-            top: calc(50% - (#{$shape-size}/2));
-            left: calc(#{$shape-size} / 2 * -1);
-            height: $shape-size;
-            width: $shape-size;
-        }
+        .content {
+            $shape-size:500px;
 
-        .red-circle2 {
-            top: calc(50% - (#{$shape-size}/2));
-            right: calc(#{$shape-size} / 2 * -1);
-            height: $shape-size;
-            width: $shape-size;
+            .red-circle1 {
+                top: calc(50% - (#{$shape-size}/2));
+                left: calc(#{$shape-size} / 2 * -1);
+                height: $shape-size;
+                width: $shape-size;
+            }
+    
+            .red-circle2 {
+                top: calc(50% - (#{$shape-size}/2));
+                right: calc(#{$shape-size} / 2 * -1);
+                height: $shape-size;
+                width: $shape-size;
+            }
         }
     }
 }
@@ -34,20 +37,23 @@
     }
 
     body .container {
-        $shape-size: 400px;
 
-        .red-circle1 {
-            top: calc(#{$shape-size} / 2 * -1);
-            left: calc(50% - (#{$shape-size}/2));
-            height: $shape-size;
-            width: $shape-size;
-        }
+        .content {
+            $shape-size: 400px;
 
-        .red-circle2 {
-            top: calc(100% - (#{$shape-size}/2));
-            left: calc(50% - (#{$shape-size}/2));
-            height: $shape-size;
-            width: $shape-size;
+            .red-circle1 {
+                top: calc(#{$shape-size} / 2 * -1);
+                left: calc(50% - (#{$shape-size}/2));
+                height: $shape-size;
+                width: $shape-size;
+            }
+    
+            .red-circle2 {
+                top: calc(100% - (#{$shape-size}/2));
+                left: calc(50% - (#{$shape-size}/2));
+                height: $shape-size;
+                width: $shape-size;
+            }
         }
     }
 
@@ -144,24 +150,24 @@
     }
 
     body .container {
-        $shape-size: 200px;
-
-        .red-circle1 {
-            top: calc(#{$shape-size} / 2 * -1);
-            left: calc(50% - (#{$shape-size}/2));
-            height: $shape-size;
-            width: $shape-size;
-        }
-
-        .red-circle2 {
-            top: calc(100% - (#{$shape-size}/2));
-            left: calc(50% - (#{$shape-size}/2));
-            height: $shape-size;
-            width: $shape-size;
-        }
 
         .content {
+            $shape-size: 350px;
             z-index: 0;
+
+            .red-circle1 {
+                top: calc(#{$shape-size} / 2 * -1);
+                left: calc(50% - (#{$shape-size}/2));
+                height: $shape-size;
+                width: $shape-size;
+            }
+    
+            .red-circle2 {
+                top: calc(100% - (#{$shape-size}/2));
+                left: calc(50% - (#{$shape-size}/2));
+                height: $shape-size;
+                width: $shape-size;
+            }
 
             h2 {
                 font-size:2.5rem;
