@@ -86,12 +86,20 @@
 
 @keyframes squeeze {
 
-    20% {
+    15% {
         transform: scaleY(0.8);
     }
 
-    40% {
+    30% {
         transform: scaleY(1.2);
+    }
+
+    45% {
+        transform: scaleY(0.9);
+    }
+
+    60% {
+        transform: scaleY(1.1);
     }
 
     100% {
