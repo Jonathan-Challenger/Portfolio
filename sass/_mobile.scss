@@ -1,5 +1,6 @@
 // SCREEN AT 1700PX
 @media screen and (max-width: 1700px) {
+
     body .container {
         $shape-size:500px;
 
@@ -83,6 +84,10 @@
 
 // SCREEN AT 800PX
 @media screen and (max-width: 800px) {
+
+    body section {
+        scroll-snap-align: none;
+    }
 
     .navbar .fas {
         visibility: visible;
