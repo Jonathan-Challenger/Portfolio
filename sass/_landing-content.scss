@@ -53,7 +53,7 @@
         }
 
         .letter.triggered {
-            animation: squeeze 1s linear;
+            animation: squeeze 1s 100ms linear;
         }
 
         #first {
@@ -86,19 +86,19 @@
 
 @keyframes squeeze {
 
-    15% {
+    20% {
         transform: scaleY(0.8);
     }
 
-    30% {
+    40% {
         transform: scaleY(1.2);
     }
 
-    45% {
+    60% {
         transform: scaleY(0.9);
     }
 
-    60% {
+    80% {
         transform: scaleY(1.1);
     }
 
