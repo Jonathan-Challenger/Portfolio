@@ -9,3 +9,11 @@ for (let i = 0; i < cards.length; i++) {
         cards[i].classList.toggle("flipped")
     })
 }
+
+const lets = document.querySelectorAll('.letter');
+
+for (let i = 0; i < lets.length; i++) {
+    lets[i].addEventListener('mouseover', () => {
+        lets[i].classList.toggle("triggered")
+    })
+}
