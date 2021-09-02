@@ -3,8 +3,11 @@
     height: 100%;
     width: 100%;
 
+    .info {
+        width: 50%;
+    }
+
     p {
-        width: 60%;
         font-size: 1.1rem;
 
         .highlight {

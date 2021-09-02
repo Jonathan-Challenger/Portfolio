@@ -86,6 +86,35 @@
             bottom: -20px;
         }
     }
+
+    body #about {
+        $shape-size-m: 250px;
+
+        .red-circle5 {
+            height: $shape-size-m;
+            width: $shape-size-m;
+            left: calc(#{$shape-size-m} / 2 * -1);
+            top: calc(50% - (#{$shape-size-m}/2));
+        }
+
+        .red-circle6 {
+            height: $shape-size-m;
+            width: $shape-size-m;
+            right: calc(#{$shape-size-m} / 2 * -1);
+            top: calc(50% - (#{$shape-size-m}/2));
+        }
+
+        .abt-content {
+
+            .info {
+                width: 100%;
+            }
+
+            .img {
+                display: none;
+            }
+        }
+    }
 }
 
 // SCREEN AT 800PX
@@ -141,6 +170,11 @@
     body #home {
         padding-top: 97px;
         height: 900px;
+    }
+
+    body #about {
+        padding-top: 97px;
+        height: 1200px;
     }
 
     body #skills {
@@ -228,6 +262,24 @@
 
         .content-cont::after {
             bottom: -20px;
+        }
+    }
+
+    body #about {
+        $shape-size-m: 150px;
+
+        .red-circle5 {
+            height: $shape-size-m;
+            width: $shape-size-m;
+            left: calc(#{$shape-size-m} / 2 * -1);
+            top: calc(50% - (#{$shape-size-m}/2));
+        }
+
+        .red-circle6 {
+            height: $shape-size-m;
+            width: $shape-size-m;
+            right: calc(#{$shape-size-m} / 2 * -1);
+            top: calc(50% - (#{$shape-size-m}/2));
         }
     }
 }
