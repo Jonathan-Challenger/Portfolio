@@ -72,10 +72,6 @@
                 transition: all 400ms ease;
             }
 
-            .front {
-                opacity: 0.5;
-            }
-
             .back {
                 transform: rotateY(180deg);
                 font-size: 0.8rem;
@@ -92,8 +88,7 @@
         }
     
         .front:hover {
-            transform: scale(1.06);
-            opacity: 1;
+            animation: tilt 1s linear infinite;
         }
     
         #python:hover i{
@@ -103,7 +98,6 @@
         #js:hover i {
             color: $js-light;
             background-color: $js-dark;
-    
         }
     
         #html:hover i{
@@ -140,4 +134,15 @@
     width: 100%;
     background-color: $primary;
     height: 3px;
+}
+
+@keyframes tilt {
+    50% {
+        box-shadow: -12px 3px 16px -4px rgba(0,0,0,0.51);
+        transform: rotateY(15deg);
+    }
+
+    100% {
+        transform: rotateY(0);
+    }
 }
