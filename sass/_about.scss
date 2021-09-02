@@ -5,10 +5,14 @@
 
     .info {
         width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     p {
         font-size: 1.1rem;
+        text-align: left;
 
         .highlight {
             cursor: pointer;
@@ -49,31 +53,34 @@
         .highlight:hover::after {
             clip-path: inset(0 0 0 0);
         }
+    }
 
-        a {
-            text-decoration: none;
-            color: $primary;
-            position: relative;
-        }
+    a {
+        font-size: 1.1rem;
+        text-decoration: none;
+        color: $primary;
+        position: relative;
+        text-align: center;
+        width: fit-content;
+    }
 
-        a:hover::after {
-            clip-path: inset(0 0 0 0);
-        }
+    a:hover::after {
+        clip-path: inset(0 0 0 0);
+    }
 
-        a::after {
-            content: '';
-            height: 3px;
-            width: 100%;
-            position: absolute;
-            bottom: -10px;
-            left: 0;
-            background-color: darken($primary, 20%);
-            clip-path: inset(0 100% 100% 0);
-            transition: all 600ms ease;
-        }
+    a::after {
+        content: '';
+        height: 3px;
+        width: 100%;
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        background-color: darken($primary, 20%);
+        clip-path: inset(0 100% 0 0);
+        transition: all 600ms ease;
+    }
 
-        a:hover {
-            color: darken($primary, 10%);
-        }
+    a:hover {
+        color: darken($primary, 10%);
     }
 }
