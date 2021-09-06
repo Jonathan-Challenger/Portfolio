@@ -7,5 +7,17 @@
     .project-cont {
         border: 1px solid black;
         border-radius: 40px;
+        cursor: pointer;
+        transition: all 500ms ease;
+
+        img {
+            height: 100%;
+            width: 100%;
+            border-radius: 40px;
+        }
+    }
+
+    .project-cont:hover {
+        transform: scale(1.05);
     }
 }
