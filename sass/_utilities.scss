@@ -34,5 +34,17 @@ $shape-size-m: 400px;
     min-height: 521px;
     text-align: center;
     position: relative;
+
+    &::after {
+        content:'';
+        position: absolute;
+        bottom: -60px;
+        left: 0;
+        width: 100%;
+        background-color: $primary;
+        height: 3px;
+    }
 }
+
+
 

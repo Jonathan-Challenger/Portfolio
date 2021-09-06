@@ -126,16 +126,6 @@
     }
 }
 
-.content-cont::after {
-    content:'';
-    position: absolute;
-    bottom: -60px;
-    left: 0;
-    width: 100%;
-    background-color: $primary;
-    height: 3px;
-}
-
 @keyframes tilt {
     50% {
         box-shadow: -12px 3px 16px -4px rgba(0,0,0,0.51);
