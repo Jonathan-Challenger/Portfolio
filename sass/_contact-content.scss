@@ -8,12 +8,11 @@ h1 {
 
 .contact-cont {
     height: 75%;
-    background-color: $primary;
+    background-color: rgba(227, 0, 4, 0.7);
     width: 100%;
     position: absolute;
     bottom: 0;
     border-radius: 40px 40px 0 0;
-    opacity: 0.7;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -22,11 +21,37 @@ h1 {
     form {
         width: 30%;
 
+        .conts {
+            position: relative;
+            min-height: 90px;
+        }
+
+        .mes-cont {
+            min-height: 285px;
+            position: relative;
+        }
+
         .label {
-            color: white;
+            color: black;
+            position: absolute;
+            padding-left: 10px;
+            top: 37%;
+            z-index: 1;
+            pointer-events: none;
+            transition: all 300ms ease;
+        }
+
+        .message {
+            color: black;
+            position: absolute;
+            padding-left: 10px;
+            z-index: 1;
+            top: 10%;
         }
 
         input {
+            position: absolute;
+            top: calc(50% - 20px);
             width: 100%;
             margin-bottom: 25px;
             height: 40px;
@@ -43,7 +68,13 @@ h1 {
             box-shadow: 5px 4px 14px -3px #000000;
         }
 
+        input:focus + .label, input:valid + .label {
+            transform: translateY(-150%);
+        }
+
         #message {
+            position: absolute;
+            top: 25px;
             margin-bottom: 25px;
             font-family: 'Sora', 'sans-serif';
             resize: none;
@@ -60,11 +91,16 @@ h1 {
             box-shadow: 5px 4px 14px -3px #000000;
         }
 
+        #message:focus + .message, #message:valid + .message {
+            transform: translateY(-150%);
+        }
+
         button {
             height: 40px;
             width: 20%;
             border-radius: 40px;
             cursor: pointer;
+            margin-top: 60px;
             margin-left: calc(50% - 55px);
             font-family: 'Sora', sans-serif;
             border: 1px solid rgba(0,0,0,0.7);
