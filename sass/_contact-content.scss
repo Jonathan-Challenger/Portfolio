@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
 h1 {
     font-size: 3rem;
     position: absolute;
@@ -12,4 +14,34 @@ h1 {
     bottom: 0;
     border-radius: 40px 40px 0 0;
     opacity: 0.7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    form {
+        width: 30%;
+
+        input {
+            width: 100%;
+            margin-bottom: 30px;
+            height: 40px;
+            font-family: 'Sora', 'sans-serif';
+            padding: 0 8px;
+        }
+
+        #message {
+            margin-bottom: 30px;
+            font-family: 'Sora', 'sans-serif';
+            resize: none;
+            padding: 5px 8px;
+            font-size: 0.8rem;
+        }
+
+        button {
+            height: 40px;
+            width: 20%;
+            border-radius: 40px;
+            cursor: pointer;
+        }
+    }
 }
