@@ -38,6 +38,7 @@ h1 {
 
         input:focus {
             outline: none;
+            box-shadow: 5px 4px 14px -3px #000000;
         }
 
         #message {
@@ -53,6 +54,7 @@ h1 {
 
         #message:focus {
             outline: none;
+            box-shadow: 5px 4px 14px -3px #000000;
         }
 
         button {
@@ -64,6 +66,10 @@ h1 {
             font-family: 'Sora', sans-serif;
             border: 1px solid black;
             background-color: white;
+        }
+
+        button:hover {
+            box-shadow: 5px 4px 14px -3px #000000;
         }
     }
 }
