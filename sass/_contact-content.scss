@@ -1,3 +1,9 @@
+h1 {
+    font-size: 3rem;
+    position: absolute;
+    top: 20%;
+}
+
 .contact-cont {
     height: 70%;
     background-color: $primary;
@@ -5,4 +11,5 @@
     position: absolute;
     bottom: 0;
     border-radius: 40px 40px 0 0;
+    opacity: 0.7;
 }
