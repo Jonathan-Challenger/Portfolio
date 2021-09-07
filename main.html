@@ -236,12 +236,18 @@
             <h1>Contact Me</h1>
             <div class="contact-cont">
                 <form action="">
-                    <label for="name" class="label"><span>Name *</span></label>
-                    <input type="text" name="name" id="name" required oninvalid="this.setCustomValidity('Enter Name Here')" oninput="this.setCustomValidity('')">
-                    <label for="email" class="label"><span>Email Address *</span></label>
-                    <input type="email" name="email" id="email" required oninvalid="this.setCustomValidity('Enter Email Here')" oninput="this.setCustomValidity('')">
-                    <label for="message" class="label"><span>Message</span></label>
-                    <textarea type="text" name="message" id="message" cols="79" rows="13" required></textarea>
+                    <div class="conts">
+                        <input type="text" name="name" id="name" required oninvalid="this.setCustomValidity('Enter Name Here')" oninput="this.setCustomValidity('')">   
+                        <label for="name" class="label"><span>Name *</span></label>
+                    </div>
+                    <div class="conts">
+                        <input type="email" name="email" id="email" required oninvalid="this.setCustomValidity('Enter Email Here')" oninput="this.setCustomValidity('')">
+                        <label for="email" class="label"><span>Email Address *</span></label>
+                    </div>
+                    <div class="mes-cont">
+                        <textarea type="text" name="message" id="message" cols="79" rows="13" required></textarea>
+                        <label for="message" class="label message"><span>Message</span></label>
+                    </div>
                     <button type="submit">Send</button>
                 </form>
                 <div class="link-container">
