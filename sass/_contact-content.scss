@@ -23,18 +23,20 @@ h1 {
 
         input {
             width: 100%;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
             height: 40px;
             font-family: 'Sora', 'sans-serif';
             padding: 0 8px;
+            font-size: 1rem;
         }
 
         #message {
-            margin-bottom: 30px;
+            margin-bottom: 25px;
             font-family: 'Sora', 'sans-serif';
             resize: none;
             padding: 5px 8px;
-            font-size: 0.8rem;
+            font-size: 1rem;
+            width: 100%;
         }
 
         button {
@@ -42,6 +44,7 @@ h1 {
             width: 20%;
             border-radius: 40px;
             cursor: pointer;
+            margin-left: calc(50% - 55px);
         }
     }
 }
