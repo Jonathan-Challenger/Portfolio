@@ -56,8 +56,42 @@
             }
 
             button {
-                height: 40px;
+                height: 50px;
                 cursor: pointer;
+                border-radius: 10px;
+                border: none;
+                background-color: white;
+                color: black;
+                font-family: 'Sora', sans-serif;
+                width: 110px;
+                transition: all 300ms ease;
+                position: relative;
+                font-size: 15px;
+            }
+
+            i {
+                transition: transform 300ms ease;
+            }
+
+            button::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background-color: rgba(19, 19, 19, 0.3);
+                border-radius: 10px;
+                transition: all 300ms ease;
+                opacity: 0;
+            }
+
+            button:hover::after {
+                opacity: 1;
+            }
+
+            button:hover i {
+                transform: translateX(5px);
             }
         }
     }
