@@ -30,7 +30,7 @@
             padding: 1em;
             transform: translateY(101%);
             transition: all 500ms ease;
-            font-size: 13px;
+            font-size: 17px;
             display: flex;
             flex-flow: column;
 
@@ -39,12 +39,14 @@
                 flex-flow: column;
                 align-items: center;
                 justify-content: center;
+                margin: 0.75em 0;
 
                 ul {
                     list-style: none;
                     display: flex;
 
                     li {
+                        font-size: 14px;
                         padding: 0.5rem;
                         margin: 0 1em;
                         border: 1px solid white;
