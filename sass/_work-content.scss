@@ -33,6 +33,11 @@
             font-size: 13px;
             display: flex;
             flex-flow: column;
+
+            button {
+                height: 40px;
+                cursor: pointer;
+            }
         }
     }
 
