@@ -30,6 +30,9 @@
             padding: 1em;
             transform: translateY(101%);
             transition: all 500ms ease;
+            font-size: 13px;
+            display: flex;
+            flex-flow: column;
         }
     }
 
