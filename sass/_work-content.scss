@@ -34,6 +34,25 @@
             display: flex;
             flex-flow: column;
 
+            .skills {
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+                justify-content: center;
+
+                ul {
+                    list-style: none;
+                    display: flex;
+
+                    li {
+                        padding: 0.5rem;
+                        margin: 0 1em;
+                        border: 1px solid white;
+                        border-radius: 10px;
+                    }
+                }
+            }
+
             button {
                 height: 40px;
                 cursor: pointer;
