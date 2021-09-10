@@ -9,15 +9,37 @@
         border-radius: 40px;
         cursor: pointer;
         transition: all 500ms ease;
+        position: relative;
+        overflow: hidden;
 
         img {
             height: 100%;
             width: 100%;
             border-radius: 40px;
         }
+
+        .extra-info {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 100%;
+            background-color: $primary;
+            color: white;
+            border-radius: 40px;
+            padding: 1em;
+            transform: translateY(101%);
+            transition: all 500ms ease;
+        }
     }
 
     .project-cont:hover {
         transform: scale(1.05);
     }
+
+    .project-cont:hover .extra-info {
+        transform: translateY(0);
+    }
+
+
 }
