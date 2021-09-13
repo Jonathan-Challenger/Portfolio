@@ -21,13 +21,27 @@
             }
         }
     }
+
+    body #work {
+        .extra-info {
+            font-size: 15px;
+        }
+    }
 }
 
 // SCREEN AT 1400PX
 @media screen and (max-width: 1400px) {
+    body section {
+        scroll-snap-align: none;
+    }
+
     body #home {
         padding-top: 85px;
         height: 900px;
+    }
+
+    body #about {
+        padding-top: 20px;
     }
 
     body #skills {
@@ -38,13 +52,21 @@
 
     body #work {
         padding-top: 97px;
-        height: 1500px;
+        height: 1250px;
+        margin-bottom: 97px;
+    }
+
+    .navbar {
+        .navbar-container{
+            z-index: 1;
+        }
     }
 
     body .container {
 
         .content {
             $shape-size: 400px;
+            z-index: 0;
 
             .red-circle1 {
                 top: calc(#{$shape-size} / 2 * -1);
@@ -217,13 +239,17 @@
     body #about {
         padding-top: 97px;
         height: 950px;
-        margin-bottom: 97px;
     }
 
     body #skills {
         height: 1128px;
         padding-top: 97px;
         margin-bottom: 97px;
+    }
+
+    body #work {
+        padding-top: 97px;
+        height: 1250px;
     }
 
     body .container {
