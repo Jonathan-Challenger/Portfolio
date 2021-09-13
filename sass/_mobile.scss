@@ -1,5 +1,23 @@
 // SCREEN AT 1700PX
 @media screen and (max-width: 1700px) {
+    body section {
+        scroll-snap-align: none;
+    }
+
+    body #about {
+        padding-top: 97px;
+        height: 800px;
+        margin-bottom: 97px;
+    }
+
+    body #skills {
+        padding-top: 97px;
+        margin-bottom: 97px;
+    }
+
+    body #work {
+        padding-top: 97px;
+    }
 
     body .container {
 
@@ -31,9 +49,6 @@
 
 // SCREEN AT 1400PX
 @media screen and (max-width: 1400px) {
-    body section {
-        scroll-snap-align: none;
-    }
 
     body #home {
         padding-top: 85px;
@@ -183,16 +198,13 @@
 // SCREEN AT 800PX
 @media screen and (max-width: 800px) {
 
-    body section {
-        scroll-snap-align: none;
-    }
-
     .navbar .fas {
         visibility: visible;
     }
 
     .navbar {
         background-color: white;
+        width: 100%;
 
         .navbar-container {
             position: relative;
@@ -202,10 +214,9 @@
                 flex-direction: column;
                 text-align: center;
                 width: 100%;
-                top: 5.4rem;
+                top: 6rem;
                 clip-path: inset(0 0 100% 0);
                 transition: all 800ms ease;
-                z-index: 1;
 
                 .navbar-link-container {
                     border-right: none;
@@ -256,7 +267,6 @@
 
         .content {
             $shape-size: 350px;
-            z-index: 0;
 
             .red-circle1 {
                 top: calc(#{$shape-size} / 2 * -1);
@@ -386,6 +396,14 @@
 
         .res-img {
             display: block;
+        }
+        
+        .projects {
+            .extra-info {
+                li {
+                    margin: 0 0.5em;
+                }
+            }
         }
     }
 }
