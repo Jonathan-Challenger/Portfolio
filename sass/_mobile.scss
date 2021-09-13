@@ -36,6 +36,11 @@
         height: 882px;
     }
 
+    body #work {
+        padding-top: 97px;
+        height: 1500px;
+    }
+
     body .container {
 
         .content {
@@ -112,6 +117,42 @@
 
             .img {
                 display: none;
+            }
+        }
+    }
+
+    body #work {
+        $shape-size-m: 250px;
+
+        .red-circle5 {
+            height: $shape-size-m;
+            width: $shape-size-m;
+            left: calc(#{$shape-size-m} / 2 * -1);
+            top: calc(50% - (#{$shape-size-m}/2));
+        }
+
+        .red-circle6 {
+            height: $shape-size-m;
+            width: $shape-size-m;
+            right: calc(#{$shape-size-m} / 2 * -1);
+            top: calc(50% - (#{$shape-size-m}/2));
+        }
+
+        .projects {
+            grid-template-columns: 1fr;
+
+            .extra-info {
+                font-size: 13px;
+
+                li {
+                    font-size: 12px;
+                }
+
+                button {
+                    font-size: 12px;
+                    height: 40px;
+                    width: 90px;
+                }
             }
         }
     }
@@ -293,6 +334,24 @@
             a {
                 font-size: 0.9rem;
             }
+        }
+    }
+
+    body #work {
+        $shape-size-m: 150px;
+
+        .red-circle5 {
+            height: $shape-size-m;
+            width: $shape-size-m;
+            left: calc(#{$shape-size-m} / 2 * -1);
+            top: calc(50% - (#{$shape-size-m}/2));
+        }
+
+        .red-circle6 {
+            height: $shape-size-m;
+            width: $shape-size-m;
+            right: calc(#{$shape-size-m} / 2 * -1);
+            top: calc(50% - (#{$shape-size-m}/2));
         }
     }
 }
