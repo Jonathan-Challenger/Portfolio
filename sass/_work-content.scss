@@ -1,3 +1,5 @@
+@import 'utilities';
+
 .projects {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -16,6 +18,10 @@
             height: 100%;
             width: 100%;
             border-radius: 40px;
+        }
+
+        .res-img {
+            @extend %small-proj-img;
         }
 
         .extra-info {
