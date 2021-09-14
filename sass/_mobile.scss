@@ -1,4 +1,10 @@
 // SCREEN AT 1700PX
+@media (min-width: 1700px) {
+    body #contact {
+        height: 900px;
+    }
+}
+
 @media screen and (max-width: 1700px) {
 
     body #about {
@@ -201,6 +207,10 @@
         .contact-cont {
             form {
                 width: 40%;
+
+                button {
+                    width: 30%;
+                }
             }
         }
     }
@@ -413,6 +423,18 @@
             .extra-info {
                 li {
                     margin: 0 0.5em;
+                }
+            }
+        }
+    }
+
+    body #contact {
+        .contact-cont {
+            form {
+                width: 60%;
+
+                button {
+                    width: 40%;
                 }
             }
         }
