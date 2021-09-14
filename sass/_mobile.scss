@@ -14,6 +14,12 @@
 
     body #work {
         padding-top: 97px;
+        margin-bottom: 97px;
+    }
+
+    body #contact {
+        padding-top: 97px;
+        height: 900px;
     }
 
     body .container {
@@ -65,7 +71,7 @@
     body #work {
         padding-top: 97px;
         height: 1250px;
-        margin-bottom: 97px;
+        margin-bottom: 150px;
     }
 
     .navbar {
@@ -187,6 +193,14 @@
                     height: 40px;
                     width: 90px;
                 }
+            }
+        }
+    }
+
+    body #contact {
+        .contact-cont {
+            form {
+                width: 40%;
             }
         }
     }
