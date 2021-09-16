@@ -12,7 +12,7 @@
     top: calc(50% - (#{$shape-size-m}/2));
 }
 
-.content-cont {
+body .content-cont {
     @extend %content-cont;
     
     h1 {
@@ -83,7 +83,7 @@
             }
         }
 
-        .item.flipped {
+        .flipped {
             transform: rotateY(180deg);
         }
     
