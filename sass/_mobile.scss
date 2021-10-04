@@ -161,8 +161,16 @@
                 width: 100%;
             }
 
-            .img {
-                display: none;
+            p {
+                font-size: 1.1rem;
+
+                .highlight::before {
+                    height:11px;
+                }
+
+                .highlight::after {
+                    height:12px;
+                }
             }
         }
     }
