@@ -4,19 +4,15 @@
     width: 100%;
 
     .info {
-        width: 50%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .img {
-        width: 50%;
-    }
-
     p {
-        font-size: 1.1rem;
-        text-align: left;
+        font-size: 1.3rem;
+        text-align: center;
 
         .highlight {
             cursor: pointer;
@@ -26,7 +22,7 @@
 
         .highlight::before {
             content: '';
-            height: 11px;
+            height: 13px;
             width: 100%;
             position: absolute;
             bottom: 0;
@@ -43,7 +39,7 @@
 
         .highlight::after {
             content: '';
-            height: 12px;
+            height: 14px;
             width: 100%;
             position: absolute;
             top: 0;
