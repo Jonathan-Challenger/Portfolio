@@ -195,6 +195,11 @@
         .projects {
             grid-template-columns: 1fr;
 
+            .project-cont {
+                max-width: 600px;
+                justify-self: center;
+            }
+
             .extra-info {
                 font-size: 13px;
 
