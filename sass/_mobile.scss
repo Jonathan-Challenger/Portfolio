@@ -1,9 +1,4 @@
 // SCREEN AT 1700PX
-@media (min-width: 1700px) {
-    body #contact {
-        height: 900px;
-    }
-}
 
 @media screen and (max-width: 1700px) {
 
@@ -20,10 +15,6 @@
     body #work {
         padding-top: 97px;
         margin-bottom: 97px;
-    }
-
-    body #contact {
-        height: 900px;
     }
 
     body .container {
@@ -234,7 +225,7 @@
         .container {
             .content {
                 h2 {
-                    width: 80%;
+                    width: 60%;
                 }
             }
         }
@@ -348,7 +339,7 @@
 
             h2 {
                 font-size:2.5rem;
-                width: 100%;
+                width: 90%;
             }
 
             .letter {
