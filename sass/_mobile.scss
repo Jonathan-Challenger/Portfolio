@@ -204,11 +204,12 @@
                 li {
                     font-size: 12px;
                 }
-
-                button {
-                    font-size: 12px;
-                    height: 40px;
-                    width: 90px;
+                .project-links {
+                    button {
+                        font-size: 12px;
+                        height: 50px;
+                        width: 120px;
+                    }
                 }
             }
         }
@@ -466,6 +467,15 @@
             .extra-info {
                 li {
                     margin: 0 0.5em;
+                }
+
+                .project-links {
+                    button {
+                        font-size: 11px;
+                        height: 40px;
+                        width: 100px;
+                        margin: 0 0.5rem;
+                    }
                 }
             }
         }
