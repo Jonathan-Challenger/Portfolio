@@ -1,138 +1,139 @@
-@import 'colors';
+@import "colors";
 
 .red-circle5 {
-    @extend %shape-m;
-    left: calc(#{$shape-size-m} / 2 * -1);
-    top: calc(50% - (#{$shape-size-m}/2));
+  @extend %shape-m;
+  left: calc(#{$shape-size-m} / 2 * -1);
+  top: calc(50% - (#{$shape-size-m}/ 2));
 }
 
 .red-circle6 {
-    @extend %shape-m;
-    right: calc(#{$shape-size-m} / 2 * -1);
-    top: calc(50% - (#{$shape-size-m}/2));
+  @extend %shape-m;
+  right: calc(#{$shape-size-m} / 2 * -1);
+  top: calc(50% - (#{$shape-size-m}/ 2));
 }
 
 body .content-cont {
-    @extend %content-cont;
-    
-    h1 {
-        font-size: 3rem;
-        position: relative;
-        margin-bottom: 30px;
+  @extend %content-cont;
+
+  h1 {
+    font-size: 3rem;
+    position: relative;
+    margin-bottom: 30px;
+  }
+
+  h1::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 100%;
+    background-color: $primary;
+    height: 3px;
+  }
+
+  .skills-container {
+    display: grid;
+    padding: 10px 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 213.5px;
+    row-gap: 2em;
+    column-gap: 3rem;
+    justify-items: center;
+
+    .card-container {
+      width: 180px;
+      height: 213.5px;
+      perspective: 1000px;
     }
 
-    h1::after {
-        content:'';
-        position: absolute;
-        bottom: -15px;
-        left: 0;
+    .item {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      border-radius: 40px;
+      transition: all 1000ms ease;
+      transform-style: preserve-3d;
+
+      .front,
+      .back {
         width: 100%;
-        background-color: $primary;
-        height: 3px;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        text-align: center;
+        backface-visibility: hidden;
+        background-color: rgb(223, 223, 223);
+        border-radius: 40px;
+        border: 2px solid black;
+        transition: all 400ms ease;
+      }
+
+      .back {
+        transform: rotateY(180deg);
+        font-size: 0.8rem;
+        padding: 5px 5px;
+      }
+
+      i {
+        margin-bottom: 30px;
+      }
     }
 
-    .skills-container {
-        display: grid;
-        padding: 10px 10px;
-        grid-template-columns: repeat(4, 1fr);
-        grid-auto-rows: 213.5px;
-        row-gap: 2em;
-        column-gap: 3rem;
-        justify-items: center;
-
-        .card-container {
-            width: 180px;
-            height: 213.5px;
-            perspective: 1000px;
-        }
-    
-        .item {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            cursor: pointer;
-            border-radius: 40px;
-            transition: all 1000ms ease;
-            transform-style: preserve-3d;
-
-            .front, .back {
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                font-size: 1.5rem;
-                text-align: center;
-                backface-visibility: hidden;
-                background-color: rgb(223, 223, 223);
-                border-radius: 40px;
-                border: 2px solid black;
-                transition: all 400ms ease;
-            }
-
-            .back {
-                transform: rotateY(180deg);
-                font-size: 0.8rem;
-                padding: 5px 5px;
-            }
-    
-            i {
-                margin-bottom: 30px;
-            }
-        }
-
-        .flipped {
-            transform: rotateY(180deg);
-        }
-    
-        .front:hover {
-            animation: tilt 1s linear infinite;
-        }
-    
-        #python:hover i{
-            color: $python;
-        }
-    
-        #js:hover i {
-            color: $js-light;
-            background-color: $js-dark;
-        }
-    
-        #html:hover i{
-            color: $html;
-        }
-    
-        #css:hover i{
-            color: $css;
-        }
-    
-        #sass:hover i{
-            color: $sass;
-        }
-    
-        #vue:hover i{
-            color: $vue;
-        }
-    
-        #git:hover i{
-            color: black;
-        }
-    
-        #brain:hover i{
-            color: $brain;
-        }
+    .flipped {
+      transform: rotateY(180deg);
     }
+
+    .front:hover {
+      animation: tilt 1s linear infinite;
+    }
+
+    #python:hover i {
+      color: $python;
+    }
+
+    #js:hover i {
+      color: $js-light;
+      background-color: $js-dark;
+    }
+
+    #html:hover i {
+      color: $html;
+    }
+
+    #css:hover i {
+      color: $css;
+    }
+
+    #sass:hover i {
+      color: $sass;
+    }
+
+    #vue:hover i {
+      color: $vue;
+    }
+
+    #git:hover i {
+      color: black;
+    }
+
+    #react:hover i {
+      color: $react;
+    }
+  }
 }
 
 @keyframes tilt {
-    50% {
-        box-shadow: -12px 3px 16px -4px rgba(0,0,0,0.51);
-        transform: rotateY(15deg);
-    }
+  50% {
+    box-shadow: -12px 3px 16px -4px rgba(0, 0, 0, 0.51);
+    transform: rotateY(15deg);
+  }
 
-    100% {
-        transform: rotateY(0);
-    }
+  100% {
+    transform: rotateY(0);
+  }
 }
